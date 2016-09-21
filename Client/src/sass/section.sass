@@ -1,0 +1,54 @@
+$section-bg-color: #E25252
+
+
+section
+  background: $section-bg-color
+  padding: 110px 50px 50px
+  min-height: 3em
+
+.card
+	position: relative
+	padding: 1em 3em 2em 3em
+	width: 48%
+	background: white
+	margin-top: 2em
+
+.card .card-header h3
+	font-family: 'Fjalla One', sans-serif
+
+.card .card-body
+	margin-bottom: 4em
+.card .card-body p
+	font-family: 'Average', serif
+	font-size: 1.2em
+.card .card-body p:last-of-type
+	margin-top: 1em
+
+.card .card-footer
+	position: absolute
+	bottom: 0
+	width: calc(100% - 6em)
+	padding-bottom: 2em
+.card .card-footer div
+	width: 100%
+	border-bottom: solid 1px #d1d3d4
+
+.card .card-footer span:last-of-type
+	float: right
+
+
+
+.card:nth-of-type(even)
+	float: right
+.card:nth-of-type(odd)
+	float: left
+	clear: both
+.card:last-of-type
+	margin-bottom: 1em
+
+@media screen and (max-width: 922px)
+	.card
+		width: 100%
+
+#modal-image
+	margin: 0 auto
